@@ -3,29 +3,25 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 banner parallax-window" data-parallax="scroll"
+            <div class="col-sm-12 banner parallax-window"  style="margin-top: 45px;" data-parallax="scroll"
                  data-image-src="/img/GreenNight.jpg">
                 <div class="row-fluid">
-                    <div class="col-md-10 col-md-offset-1">
-                        <div class="col-md-12" style="margin-top: 5%;">
-                            <div class="col-md-12" id="resumeHeading" style="background-color: black;">
-                                <div class="col-md-6">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <div class="col-sm-12">
+                            <div class="col-sm-12" id="resumeHeading" style="background-color: black; margin-top: 10%;">
+                                <div class="col-sm-6">
                                     <img class="img-responsive img-circle center-block" id="portrait"
                                          src="/img/RobertKerr.jpg">
 
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-sm-6">
 
                                     <h1 class="resumeText" id="name">Robert Kerr</h1>
                                     <hr id="hr1">
                                     <h3 class="resumeText" id="title">Web Developer</h3>
-                                    <h5>210-844-5363 | robertcrawleykerr@gmail.com | github.com/robkerr1992</h5>
-                                    <h5>Full-Stack Web Developer seeking to hone his engineering repertoire with useful,
-                                        interesting
-                                        and emerging web technologies with an emphasis on OOP (Object-Oriented
-                                        Programming) and
-                                        MVC
-                                        (Model-View-Controller) software structure.
+                                    <h5>Welcome! I'm a Full-Stack Developer seeking a full-time position that will challenge my skills and further hone my engineering repertoire. I am interested in useful,
+                                        interesting and emerging web technologies especially those involving an emphasis on OOP (Object-Oriented
+                                        Programming) and MVC (Model-View-Controller) software structure.
                                     </h5>
                                 </div>
                             </div>
@@ -34,53 +30,59 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+
+            <div class="col-sm-12 divider"></div>
+        </div>
         <section class="banner1" class="bg-primary">
+
             <div class="container">
+
                 <div class="row text-center">
-                    <div class="col-lg-10 col-lg-offset-1">
-                        <h2 class="bannerFont">Development Experience</h2>
-                        <hr class="small hr">
+                    <div class="col-sm-10 col-sm-offset-1">
                         <div class="row">
-                            <div class="col-md-4 col-sm-6">
+                            <h2 class="bannerFont text-center">Contact Me</h2>
+                            <hr class="small hr">
+                            <div class="col-sm-4">
                                 <div class="service-item">
-                                    <!--                                <a class="link" href="#">-->
+                                    <a class="link" href="mailto:rksugarfree@gmail.com">
                                     <span class="spin fa-stack fa-4x hover" data-id="0">
                                         <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="icons fa fa-code fa-stack-1x"></i>
+                                        <i class="icons fa fa-envelope fa-stack-1x"></i>
                                     </span>
-                                    <!--                                </a>-->
+                                    </a>
                                     <h4 class="whiteOnHover0">
-                                        <strong>Dryden Labs LLC</strong>
+                                        <strong>Email</strong>
                                     </h4>
-                                    <p class="whiteOnHover0">Junior Web Developer</p>
+                                    {{--<p class="whiteOnHover0">Junior Web Developer</p>--}}
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6">
+                            <div class="col-sm-4">
                                 <div class="service-item">
-                                    <!--                                <a class="link" href="#">-->
+                                    <a class="link" target="_blank" href="https://linkedin.com/in/robertcrawleykerr">
                                     <span class="spin fa-stack fa-4x hover" data-id="1">
                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                       <i class="icons fa fa-cutlery fa-stack-1x"></i>
+                                       <i class="icons fa fa-linkedin fa-stack-1x"></i>
                                    </span>
-                                    <!--                                </a>-->
+                                    </a>
                                     <h4 class="whiteOnHover1">
-                                        <strong>Codeup</strong>
+                                        <strong>LinkedIn</strong>
                                     </h4>
-                                    <p class="whiteOnHover1">600+ hours hands-on with the LAMP stack.</p>
+                                    {{--<p class="whiteOnHover1">600+ hours hands-on with the LAMP stack.</p>--}}
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6">
+                            <div class="col-sm-4">
                                 <div class="service-item">
-                                    <!--                                <a class="link" href="#">-->
+                                    <a class="link" href="/contact/create">
                                     <span class="spin fa-stack fa-4x hover" data-id="2">
                                        <i class="fa fa-circle fa-stack-2x"></i>
                                        <i class="icons fa fa-moon-o fa-stack-1x"></i>
                                    </span>
-                                    <!--                                </a>-->
+                                    </a>
                                     <h4 class="whiteOnHover2">
-                                        <strong>Projects</strong>
+                                        <strong>Private Message</strong>
                                     </h4>
-                                    <p class="whiteOnHover2">Built with Laravel, JavaScript, and more.</p>
+                                    {{--<p class="whiteOnHover2">Built with Laravel, JavaScript, and more.</p>--}}
                                 </div>
                             </div>
                         </div>
@@ -95,15 +97,16 @@
 
         <div class="row">
 
-            <div class="col-md-12 divider"></div>
+            <div class="col-sm-12 divider"></div>
         </div>
         <div class="row-fluid">
-            <div class="col-md-10 col-md-offset-1 parallax-window" data-parallax="scroll"
+            <div class="col-sm-10 col-sm-offset-1 parallax-window" data-parallax="scroll"
                  data-image-src="/img/GreenNight.jpg"
                  id="contentHouser">
 
-                <div class="col-md-12" id="resumeContent">
-                    <hr class="hr">
+                <div class="col-sm-12" id="resumeContent">
+                    <h2 class="bannerFont text-center">Development Experience</h2>
+                    <hr class="small hr">
                     <h3>Codeup Software Career Accelerator | Student | Graduated September 2016</h3>
                     <h5>Project based accelerated learning program focused on helping students transition into software development. Spent over 600+ hours in class and study halls over the four months spent in school.</h5>
                     <h3>Dryden Labs | Junior Web Developer | August 2014 – September 2015</h3>
@@ -157,5 +160,10 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+
+            <div class="col-sm-12 divider"></div>
+        </div>
     </div>
+
 @stop

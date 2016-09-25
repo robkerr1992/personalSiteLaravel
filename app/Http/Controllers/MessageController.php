@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Project;
+use App\Message;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class HomeController extends Controller
+class MessageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,25 +17,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $data = [
-          'homeNav' => 'active1'
-        ];
-        return view('index', $data);
-    }
-
-    public function projects()
-    {
-        $projects = Project::orderby('id', 'desc')->get();
-        $data = [
-            'projectsNav' => 'active1',
-            'projects' => $projects
-        ];
-        return view('projects', $data);
-    }
-
-    public function contact()
-    {
-
+        //
     }
 
     /**
@@ -45,7 +27,10 @@ class HomeController extends Controller
      */
     public function create()
     {
-        //
+        $data = [
+            'contactNav' => 'active1'
+        ];
+        return view('contact.create', $data);
     }
 
     /**
@@ -56,7 +41,17 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, Message::$rules);
+        $message = new Message();
+        $message->name = $request->input('name');
+        $message->email = $request->input('email');
+        $message->phone = $request->input('phone');
+        $message->message = $request->input('message');
+        $message->save();
+        $data = [
+            'contactNav' => 'active1'
+        ];
+        return view('contact.create', $data);
     }
 
     /**
