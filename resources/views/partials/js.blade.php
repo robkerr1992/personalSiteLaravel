@@ -14,3 +14,20 @@
         src="/parallax.js-1.4.2/parallax.min.js"
 >
 </script>
+<script>
+    $('.project-card').click(function(){
+        var img = $('#image' + $(this).data('value')).html();
+        var title = $('#title' + $(this).data('value')).html();
+        var description = $('#description' + $(this).data('value')).html();
+        var tech = $('#tech' + $(this).data('value')).html();
+        var location = $('#location' + $(this).data('value')).html();
+        console.log(img);
+        $('#projectContent').fadeIn('slow');
+        $('#projectImage').attr('src', img);
+        $('#projectTitle').html(title);
+        $('#projectDescription').html(description);
+        $('#projectTech').html(tech);
+        $('.projectlocation').attr('href', location);
+        $('.projectlocation').attr('target', '_blank');
+    })
+</script>

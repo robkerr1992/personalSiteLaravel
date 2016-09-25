@@ -16,7 +16,10 @@ class BlogController extends Controller
      */
     public function index()
     {
-        //
+        $data = [
+            'blogNav' => 'active1'
+        ];
+        return view('blog.index', $data);
     }
 
     /**
