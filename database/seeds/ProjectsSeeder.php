@@ -25,8 +25,10 @@ I do not own Game of Thrones and I do not claim rights to any of it\'s character
 //                'area' => $data[0],
                 'title' => $data[0],
                 'date' => $data[1],
+                'image' => $data[2],
                 'description' => $data[3],
                 'technologies' => $data[4],
+                'location' => $data[5],
             ]);
             $project->save();
         }
