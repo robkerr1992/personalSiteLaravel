@@ -14,5 +14,6 @@
 Route::get('/', 'HomeController@index');
 Route::resource('contact', 'MessageController');
 Route::get('/projects', 'HomeController@projects');
-Route::get('/contact', 'HomeController@contact');
+//Route::get('/contact', 'HomeController@contact');
 Route::get('/message', 'HomeController@message');
+Route::get('/blog', 'BlogController@index');
