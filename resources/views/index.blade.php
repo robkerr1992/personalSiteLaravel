@@ -108,7 +108,10 @@
                     <h2 class="bannerFont text-center">Development Experience</h2>
                     <hr class="small hr">
                     <h3>Codeup Software Career Accelerator | Student | Graduated September 2016</h3>
-                    <h5>Project based accelerated learning program focused on helping students transition into software development. Spent over 600+ hours in class and study halls over the four months spent in school.</h5>
+                    <ul>
+                        <li>Project based accelerated learning program focused on helping students transition into software development.</li>
+                        <li>Spent over 600+ hours in class and study halls over the four months spent in school.</li>
+                    </ul>
                     <h3>Dryden Labs | Junior Web Developer | August 2014 – September 2015</h3>
                     <ul>
                         <li>Maintained multiple client websites utilizing WordPress, Plug-ins and custom CSS.</li>
