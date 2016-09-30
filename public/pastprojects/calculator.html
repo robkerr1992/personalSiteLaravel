@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <!--<link rel="stylesheet" type="text/css" href="/css/calculator.css">-->
+    <style>
+        #calculator-main-container {
+            position: absolute;
+            top: 30%;
+            right: 42%;
+        }
+
+        #calc-header {
+            position: absolute;
+            top: 10%;
+            right: 40%;
+        }
+
+        #main-header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            top: 8%;
+            background-color: black;
+        }
+
+        #operand {
+            float: left;
+            width: 22px;
+
+        }
+
+        #firstInput {
+            float: left;
+            width: 100px;
+
+        }
+
+        #secondInput {
+            float: left;
+            width: 100px;
+
+        }
+
+        .smallBtn {
+            width: 60px;
+            height: 60px;
+            margin-top: 2px;
+            margin-right: 2px;
+        }
+
+        #number1 {
+            background-image: url('/img/calculatorImages/1.jpg');
+            clear: left;
+            float: left;
+        }
+
+        #number1:hover {
+            background-image: url('/img/calculatorImages/1pressed.png');
+            clear: left;
+            float: left;
+        }
+
+        #number2 {
+            background-image: url('/img/calculatorImages/2.jpg');
+            float: left;
+        }
+
+        #number2:hover {
+            background-image: url('/img/calculatorImages/2pressed.png');
+            float: left;
+        }
+
+        #number3 {
+            background-image: url('/img/calculatorImages/3.jpg');
+            float: left;
+        }
+
+        #number3:hover {
+            background-image: url('/img/calculatorImages/3pressed.png');
+            float: left;
+        }
+
+        #additionBtn {
+            background-image: url('/img/calculatorImages/add.jpg');
+            float: left;
+        }
+
+        #additionBtn:hover {
+            background-image: url('/img/calculatorImages/add-pressed.png');
+            float: left;
+        }
+
+        #number4 {
+            background-image: url('/img/calculatorImages/4.jpg');
+            clear: left;
+            float: left;
+        }
+
+        #number4:hover {
+            background-image: url('/img/calculatorImages/4pressed.png');
+            clear: left;
+            float: left;
+        }
+
+        #number5 {
+            background-image: url('/img/calculatorImages/5.jpg');
+            float: left;
+        }
+
+        #number5:hover {
+            background-image: url('/img/calculatorImages/5pressed.png');
+            float: left;
+        }
+
+        #number6 {
+            background-image: url('/img/calculatorImages/6.jpg');
+            float: left;
+        }
+
+        #number6:hover {
+            background-image: url('/img/calculatorImages/6pressed.png');
+            float: left;
+        }
+
+        #subtractBtn {
+            background-image: url('/img/calculatorImages/subtract.jpg');
+            float: left;
+        }
+
+        #subtractBtn:hover {
+            background-image: url('/img/calculatorImages/subtract-pressed.png');
+            float: left;
+        }
+
+        #number7 {
+            background-image: url('/img/calculatorImages/7.jpg');
+            clear: left;
+            float: left;
+        }
+
+        #number7:hover {
+            background-image: url('/img/calculatorImages/7pressed.png');
+            float: left;
+        }
+
+        #number8 {
+            background-image: url('/img/calculatorImages/8.jpg');
+            float: left;
+
+        }
+
+        #number8:hover {
+            background-image: url('/img/calculatorImages/8pressed.png');
+            float: left;
+        }
+
+        #number9 {
+            background-image: url('/img/calculatorImages/9.jpg');
+            float: left;
+
+        }
+
+        #number9:hover {
+            background-image: url('/img/calculatorImages/9pressed.png');
+            float: left;
+        }
+
+        #multiplyBtn {
+            background-image: url('/img/calculatorImages/multiply.jpg');
+            float: left;
+        }
+
+        #multiplyBtn:hover {
+            background-image: url('/img/calculatorImages/multiply-pressed.png');
+            float: left;
+        }
+
+        #number0 {
+            background-image: url('/img/calculatorImages/0.jpg');
+            clear: left;
+            float: left;
+
+        }
+
+        #number0:hover {
+            background-image: url('/img/calculatorImages/0pressed.png');
+            float: left;
+        }
+
+        #decimalBtn {
+            background-image: url('/img/calculatorImages/decimal.jpg');
+            float: left;
+        }
+
+        #decimalBtn:hover {
+            background-image: url('/img/calculatorImages/decimal-pressed.png');
+            float: left;
+        }
+
+        #clearBtn {
+            background-image: url('/img/calculatorImages/clear.jpg');
+            float: left;
+        }
+
+        #clearBtn:hover {
+            background-image: url('/img/calculatorImages/clear-pressed.png');
+            float: left;
+        }
+
+        #divideBtn {
+            background-image: url('/img/calculatorImages/divide.jpg');
+            float: left;
+        }
+
+        #divideBtn:hover {
+            background-image: url('/img/calculatorImages/divide-pressed.png');
+            float: left;
+        }
+
+        #equalsBtn {
+            background-image: url('/img/calculatorImages/equals.jpg');
+            clear: left;
+            float: left;
+            width: 184px;
+            height: 60px;
+            margin-top: 2px;
+            color: black;
+        }
+
+        #equalsBtn:hover {
+            background-image: url('/img/calculatorImages/equals-pressed.png');
+            clear: left;
+            float: left;
+            width: 184px;
+            height: 60px;
+            margin-top: 2px;
+        }
+
+        #backspaceBtn {
+            background-image: url('/img/calculatorImages/backspace.jpg');
+            float: left;
+            margin-left: 2px;
+        }
+
+        #backspaceBtn:hover {
+            background-image: url('/img/calculatorImages/backspace-pressed.png');
+            float: left;
+            margin-left: 2px;
+        }
+
+    </style>
+
+</head>
+<body id="background">
+<div id="main-header"></div>
+<h2 id="calc-header">A Wild Calculator Appeared!</h2>
+<div id="calculator-main-container">
+    <a href=""></a>
+    <div id="text-box-holder">
+        <input id="firstInput" type="text" name="1stinput" readonly></input>
+        <input id="operand" type="text" name="operand" readonly></input>
+        <input id="secondInput" type="text" name="2ndinput" readonly></input>
+    </div>
+    <div id="calculator-btn-holder">
+        <button id="number1" class="numberBtn smallBtn" data-value="1"></button>
+        <button id="number2" class="numberBtn smallBtn" data-value="2"></button>
+        <button id="number3" class="numberBtn smallBtn" data-value="3"></button>
+        <button id="additionBtn" class="operandBtn smallBtn" data-value="+"></button>
+        <button id="number4" class="numberBtn smallBtn" data-value="4"></button>
+        <button id="number5" class="numberBtn smallBtn" data-value="5"></button>
+        <button id="number6" class="numberBtn smallBtn" data-value="6"></button>
+        <button id="subtractBtn" class="operandBtn smallBtn" data-value="-"></button>
+        <button id="number7" class="numberBtn smallBtn" data-value="7"></button>
+        <button id="number8" class="numberBtn smallBtn" data-value="8"></button>
+        <button id="number9" class="numberBtn smallBtn" data-value="9"></button>
+        <button id="multiplyBtn" class="operandBtn smallBtn" data-value="*"></button>
+        <button id="number0" class="numberBtn smallBtn" data-value="0"></button>
+        <button id="decimalBtn" class="smallBtn" value="."></button>
+        <button id="clearBtn" class="smallBtn"></button>
+        <button id="divideBtn" class="operandBtn smallBtn" data-value="/"></button>
+        <button id="equalsBtn"></button>
+        <button id="backspaceBtn" class="backspace smallBtn"></button>
+
+
+    </div>
+
+
+</div>
+
+<script type="text/javascript">
+//    (function () {
+        var firstInput = document.getElementById('firstInput');
+        var secondInput = document.getElementById('secondInput');
+        var operandInput = document.getElementById('operand');
+        var numbers = document.getElementsByClassName('numberBtn');
+        var operands = document.getElementsByClassName('operandBtn');
+        var clear = document.getElementById('clearBtn');
+        var equals = document.getElementById('equalsBtn');
+        var decimal = document.getElementById('decimalBtn');
+        var backspace = document.getElementById('backspaceBtn');
+        var numberSpitter = function () {
+            var numberSelected = this.getAttribute('data-value');
+            if (operandInput.value !== "") {
+                // numberSelected = this.getAttribute('data-value');
+                secondInput.value += numberSelected;
+            } else {
+                firstInput.value += numberSelected;
+            }
+        };
+        var operandSpitter = function () {
+            var operandSelected = this.getAttribute('data-value');
+            operandInput.value = operandSelected;
+        };
+        var processNumbers = function () {
+            if (operandInput.value == '+') {
+                firstInput.value = ((parseFloat(firstInput.value)) + (parseFloat(secondInput.value))).toFixed(4);
+                operandInput.value = "";
+                secondInput.value = "";
+            } else if (operandInput.value == '-') {
+                firstInput.value = ((parseFloat(firstInput.value)) - (parseFloat(secondInput.value))).toFixed(4);
+                operandInput.value = "";
+                secondInput.value = "";
+            } else if (operandInput.value == '*') {
+                firstInput.value = ((parseFloat(firstInput.value)) * (parseFloat(secondInput.value))).toFixed(4);
+                operandInput.value = "";
+                secondInput.value = "";
+
+            } else if (operandInput.value == '/') {
+                firstInput.value = ((parseFloat(firstInput.value)) / (parseFloat(secondInput.value))).toFixed(4);
+                operandInput.value = "";
+                secondInput.value = "";
+            }
+        };
+        var clearAllFields = function () {
+            firstInput.value = "";
+            operandInput.value = "";
+            secondInput.value = "";
+        };
+        var decimalPlacer = function () {
+            if (operandInput.value == "" && firstInput.value.indexOf('.') == -1 && firstInput.value == "") {
+                firstInput.value = '0.';
+            } else if (operandInput.value == "" && firstInput.value.indexOf('.') == -1) {
+                firstInput.value += '.';
+            } else if (operandInput.value !== "" && secondInput.value.indexOf('.') == -1 && secondInput.value == "") {
+                secondInput.value = '0.';
+            } else if (operandInput.value !== "" && secondInput.value.indexOf('.') == -1) {
+                secondInput.value += '.';
+            }
+        };
+        var backspacer = function () {
+            if (operandInput.value == "" && firstInput.value !== "") {
+                firstInput.value = firstInput.value.substring(0, firstInput.value.length - 1);
+
+            } else if (secondInput.value !== "") {
+                secondInput.value = secondInput.value.substring(0, secondInput.value.length - 1);
+
+            } else if (firstInput.value !== "" && operandInput.value !== "") {
+                operandInput.value = "";
+            }
+        };
+        for (var i = 0; i < this.numbers.length; i++) {
+            numbers[i].addEventListener('click', numberSpitter, false);
+        }
+        for (var i = 0; i < this.operands.length; i++) {
+            operands[i].addEventListener('click', operandSpitter, false);
+        }
+        equals.addEventListener('click', processNumbers, false);
+        clear.addEventListener('click', clearAllFields, false);
+        decimal.addEventListener('click', decimalPlacer, false);
+        backspace.addEventListener('click', backspacer, false);
+//    })();
+</script>
+</body>
+</html>
