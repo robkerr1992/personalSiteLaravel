@@ -21,8 +21,8 @@
         var description = $('#description' + $(this).data('value')).html();
         var tech = $('#tech' + $(this).data('value')).html();
         var location = $('#location' + $(this).data('value')).html();
-        console.log(img);
-        $('#projectContent').fadeIn('slow');
+//        console.log(img);
+//        $('#projectContent').fadeIn('slow');
         $('#projectImage').attr('src', img);
         $('#projectTitle').html(title);
         $('#projectDescription').html(description);
