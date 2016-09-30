@@ -3,10 +3,10 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-12 banner parallax-window"  style="margin-top: 45px;" data-parallax="scroll"
+            <div class="col-sm-12 banner parallax-window bigView"  style="" data-parallax="scroll"
                  data-image-src="/img/GreenNight.jpg">
-                <div class="row-fluid">
-                    <div class="col-sm-10 col-sm-offset-1">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-sm-12">
                         <div class="col-sm-12">
                             <div class="col-sm-12" id="resumeHeading" style="background-color: black; margin-top: 10%;">
                                 <div class="col-sm-6">

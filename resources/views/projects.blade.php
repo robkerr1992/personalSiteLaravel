@@ -24,7 +24,7 @@
             <div class="col-sm-6 col-md-5">
                 <a class="projectlocation" href="#"><h1 class="bannerFont text-center" id="projectTitle">210 Hopper</h1></a>
                 <div style="background-color: black; border: 2px solid green; color: green; height: 525px; margin-top: 15px;" class="col-sm-10 col-sm-offset-1" id="projectContent">
-                    <a class="projectlocation" href="#"><img class="img-responsive img-rounded" id="projectImage" style="margin-top: 5%;" src="/img/210Hopper.jpg"></a>
+                    <a class="projectlocation" href="#"><img class="img-responsive img-rounded" id="projectImage" style="margin-top: 5%;" src="/img/210hopper.jpg"></a>
                     <hr class="small hr">
                     <h4 id="projectDescription">Interactive mobile responsive web application that lists specials, events and reviews for venues in the San Antonio area. Capstone Final Project for Codeup.</h4>
                     <h4 id="projectTech">Laravel and Bootstrap frameworks, PHP, JavaScript, jQuery, MySQL</h4>

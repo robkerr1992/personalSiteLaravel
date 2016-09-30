@@ -19,3 +19,12 @@
         </div>
     </div>
 </nav>
+{{--<div class="container-fluid">--}}
+    {{--<div style="background-color: transparent;" class="row">--}}
+    {{--<div class="col-xs-4 more-options navbar-right">--}}
+        {{--<div class="more-button" id="more-options"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+{{--</div>--}}
+
+
