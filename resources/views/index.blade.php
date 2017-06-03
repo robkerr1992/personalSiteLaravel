@@ -18,10 +18,9 @@
 
                                     <h1 class="resumeText" id="name">Robert Kerr</h1>
                                     <hr id="hr1">
-                                    <h3 class="resumeText" id="title">Web Developer</h3>
-                                    <h5>Welcome! I'm a Full-Stack Developer seeking a full-time position that will challenge my skills and further hone my engineering repertoire. I am interested in useful,
-                                        interesting and emerging web technologies especially those involving an emphasis on OOP (Object-Oriented
-                                        Programming) and MVC (Model-View-Controller) software structure.
+                                    <h3 class="resumeText" id="title">Software Developer</h3>
+                                    <h5>
+                                    Welcome! I'm a Full-Stack Web and Software Developer currently employed by <a style="color:green;" href="http://www.servermonkey.com">ServerMonkey</a>, a company that sells refurbished servers and IT equipment. I am interested in useful, interesting and emerging web technologies especially those involving an emphasis on OOP (Object Oriented Programming) and MVC (Model-View-Controller) software structure. In my free time I like to play poker, go to concerts, and work on websites and software projects!
                                     </h5>
                                 </div>
                             </div>
@@ -54,7 +53,6 @@
                                     <h4 class="whiteOnHover0">
                                         <strong>Email</strong>
                                     </h4>
-                                    {{--<p class="whiteOnHover0">Junior Web Developer</p>--}}
                                 </div>
                             </div>
                             <div class="col-sm-4">
@@ -68,7 +66,6 @@
                                     <h4 class="whiteOnHover1">
                                         <strong>LinkedIn</strong>
                                     </h4>
-                                    {{--<p class="whiteOnHover1">600+ hours hands-on with the LAMP stack.</p>--}}
                                 </div>
                             </div>
                             <div class="col-sm-4">
@@ -82,7 +79,6 @@
                                     <h4 class="whiteOnHover2">
                                         <strong>Private Message</strong>
                                     </h4>
-                                    {{--<p class="whiteOnHover2">Built with Laravel, JavaScript, and more.</p>--}}
                                 </div>
                             </div>
                         </div>
@@ -107,6 +103,11 @@
                 <div class="col-sm-12" id="resumeContent">
                     <h2 class="bannerFont text-center">Development Experience</h2>
                     <hr class="small hr">
+                    <h3>ServerMonkey | Software Developer | Hired October 2016 - Current Employer</h3>
+                    <ul>
+                        <li>Responsible for maintaining, updating, and creating new features for <a style="color:green;" href="http://www.servermonkey.com">servermonkey.com</a> through the use of the Magento ecommerce platform.</li>
+                        <!-- <li></li> -->
+                    </ul>
                     <h3>Codeup Software Career Accelerator | Student | Graduated September 2016</h3>
                     <ul>
                         <li>Project based accelerated learning program focused on helping students transition into software development.</li>
@@ -142,7 +143,6 @@
                         </li>
                         <li>Bootstrap framework, PHP, JavaScript, jQuery, MySQL.
                         </li>
-                        <li>Still in production.</li>
                     </ul>
                     <h3>Weather Map Application</h3>
                     <ul>
