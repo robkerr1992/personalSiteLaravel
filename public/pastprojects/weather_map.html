@@ -108,7 +108,6 @@
 
 
     }).done(function (weather) {
-        console.log(weather);
         var tableData = '';
         weather.list.forEach(function (element, i) {
 
@@ -120,7 +119,6 @@
                         + "<br><strong>Humidity:</strong> " + weather.list[i].humidity
                         + "<br><strong>Wind:</strong> " + weather.list[i].speed + " mph"
                         + "<br><strong>Pressure:</strong> " + weather.list[i].pressure + "</p></div>"
-                console.log(tableData);
             } else {
 
                 var bodyData = '';
@@ -130,8 +128,6 @@
                         + "<br><strong>Humidity:</strong> " + weather.list[i].humidity
                         + "<br><strong>Wind:</strong> " + weather.list[i].speed + " mph"
                         + "<br><strong>Pressure:</strong> " + weather.list[i].pressure + "</p></div>"
-                console.log(tableData);
-
             }
             ;
             $('#weather').html(tableData);
@@ -175,10 +171,7 @@
     google.maps.event.addListener(marker, 'dragend', function (event) {
         document.getElementById("latitude").value = event.latLng.lat();
         document.getElementById("longitude").value = event.latLng.lng();
-        // });
 
-
-        // $('button').on('click', function(){
         var longitude = parseFloat($('#longitude').val());
         var latitude = parseFloat($('#latitude').val());
         $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
@@ -190,14 +183,12 @@
 
 
         }).done(function (weather) {
-            console.log(weather);			//redinfes map center on button press
             map.setCenter({
                 zoom: 10,
                 lat: latitude,
                 lng: longitude
             });
 
-            console.log(weather);
             var tableData = '';
             weather.list.forEach(function (element, i) {
 
@@ -209,9 +200,7 @@
                             + "<br><strong>Humidity:</strong> " + weather.list[i].humidity
                             + "<br><strong>Wind:</strong> " + weather.list[i].speed + " mph"
                             + "<br><strong>Pressure:</strong> " + weather.list[i].pressure + "</p></div>"
-                    console.log(tableData);
                 } else {
-
                     var bodyData = '';
                     tableData += "<div id='col-mid-4' class='weatherDays'><p>" + moment(weather.list[i].dt * 1000).format('MMM Do YY')
                             + "<br><strong>" + weather.list[i].temp.max + "/" + weather.list[i].temp.min + "</strong><img src=http://openweathermap.org/img/w/" + weather.list[i].weather[0].icon + ".png>"
@@ -219,18 +208,12 @@
                             + "<br><strong>Humidity:</strong> " + weather.list[i].humidity
                             + "<br><strong>Wind:</strong> " + weather.list[i].speed + " mph"
                             + "<br><strong>Pressure:</strong> " + weather.list[i].pressure + "</p></div>"
-                    console.log(tableData);
-
                 }
                 ;
                 $('#weather').html(tableData);
-
             });
-
-
         });
     });
-
 
     $('button').on('click', function () {
         var longitude = parseFloat($('#longitude').val());
@@ -242,16 +225,13 @@
             lat: latitude,
             lon: longitude
 
-
         }).done(function (weather) {
-            console.log(weather);			//redinfes map center on button press
             map.setCenter({
                 zoom: 10,
                 lat: latitude,
                 lng: longitude
             });
 
-            console.log(weather);
             var tableData = '';
             weather.list.forEach(function (element, i) {
 
@@ -263,9 +243,7 @@
                             + "<br><strong>Humidity:</strong> " + weather.list[i].humidity
                             + "<br><strong>Wind:</strong> " + weather.list[i].speed + " mph"
                             + "<br><strong>Pressure:</strong> " + weather.list[i].pressure + "</p></div>"
-                    console.log(tableData);
                 } else {
-
                     var bodyData = '';
                     tableData += "<div id='col-mid-4' class='weatherDays'><p>" + moment(weather.list[i].dt * 1000).format('MMM Do YY')
                             + "<br><strong>" + weather.list[i].temp.max + "/" + weather.list[i].temp.min + "</strong><img src=http://openweathermap.org/img/w/" + weather.list[i].weather[0].icon + ".png>"
@@ -273,18 +251,11 @@
                             + "<br><strong>Humidity:</strong> " + weather.list[i].humidity
                             + "<br><strong>Wind:</strong> " + weather.list[i].speed + " mph"
                             + "<br><strong>Pressure:</strong> " + weather.list[i].pressure + "</p></div>"
-                    console.log(tableData);
-
                 }
-                ;
                 $('#weather').html(tableData);
-
             });
-
-
         });
     });
-
 
 </script>
 </body>
